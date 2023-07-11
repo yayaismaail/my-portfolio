@@ -579,7 +579,7 @@ textarea {
     background-size: contain;
     border-top-left-radius: 105px;
     box-sizing: border-box;
-    padding: 10%;
+    padding: 9%;
     margin-top: 7em;
   }
 
@@ -617,6 +617,6 @@ textarea {
 
   input,
   textarea {
-    width: 720px;
+    width: 500px;
   }
 }
