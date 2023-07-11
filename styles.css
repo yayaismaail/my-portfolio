@@ -378,9 +378,9 @@ form {
 }
 
 .form-btn:hover {
-    color: #cfd8dc;
-    background-color: #396df2;
-    border: 1px solid #cfd8dc;
+  color: #cfd8dc;
+  background-color: #396df2;
+  border: 1px solid #cfd8dc;
 }
 
 label {
@@ -412,7 +412,8 @@ textarea {
   margin: 14% auto 2%;
 }
 
-.resume-btn:hover, .work-btn:hover {
-    color: #dfe1e6;
-    background-color: #396df2;
+.resume-btn:hover,
+.work-btn:hover {
+  color: #dfe1e6;
+  background-color: #396df2;
 }
