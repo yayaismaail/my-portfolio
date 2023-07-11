@@ -490,9 +490,9 @@ textarea {
     margin: 7em;
   }
 
-  /* .work:nth-child(even) {
-      flex-direction: row-reverse;
-    } */
+  .work:nth-child(even) {
+    flex-direction: row-reverse;
+  }
 
   .work img {
     width: 100%;
