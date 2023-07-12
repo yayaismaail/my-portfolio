@@ -387,6 +387,12 @@ form {
   margin-top: 40px;
 }
 
+.form-btn:hover {
+  color: #cfd8dc;
+  background-color: #396df2;
+  border: 1px solid #cfd8dc;
+}
+
 label {
   display: block;
 }
@@ -416,207 +422,213 @@ textarea {
   margin: 14% auto 2%;
 }
 
-@media only screen and (min-width: 768px) {
-  .navbar {
-    padding: 25px 110px;
-  }
+.resume-btn:hover,
+.work-btn:hover {
+  color: #dfe1e6;
+  background-color: #396df2;
 
-  .mobile-menu,
-  .mobile,
-  .shape {
-    display: none;
-  }
+  @media only screen and (min-width: 768px) {
+    .navbar {
+      padding: 25px 110px;
+    }
 
-  .desktop-menu,
-  .desktop {
-    display: block;
-  }
+    .mobile-menu,
+    .mobile,
+    .shape {
+      display: none;
+    }
 
-  .desktop-menu {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
+    .desktop-menu,
+    .desktop {
+      display: block;
+    }
 
-  .desktop-menu li {
-    display: inline-block;
-  }
+    .desktop-menu {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
 
-  .desktop-menu li a {
-    display: block;
-    color: #344563;
-    padding: 8px 16px;
-    text-decoration: none;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 1.1em;
-    line-height: 20px;
-    text-align: center;
-  }
+    .desktop-menu li {
+      display: inline-block;
+    }
 
-  .headline {
-    background: #fff url("images/Header-desktop.png") no-repeat;
+    .desktop-menu li a {
+      display: block;
+      color: #344563;
+      padding: 8px 16px;
+      text-decoration: none;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 1.1em;
+      line-height: 20px;
+      text-align: center;
+    }
 
-    /* background-size: contain; */
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    border-bottom-left-radius: 75px;
-    padding: 10% 18%;
-    margin-bottom: 50px;
-  }
+    .headline {
+      background: #fff url("images/Header-desktop.png") no-repeat;
 
-  .headline h1 {
-    width: 45%;
-  }
+      /* background-size: contain; */
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      border-bottom-left-radius: 75px;
+      padding: 10% 18%;
+      margin-bottom: 50px;
+    }
 
-  .headline .content {
-    width: 90%;
-  }
+    .headline h1 {
+      width: 45%;
+    }
 
-  .headline i {
-    color: #505f79;
-    margin-bottom: 5%;
-  }
+    .headline .content {
+      width: 90%;
+    }
 
-  .work {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    background-color: #fff;
-    border-radius: 16px;
-    border: 1px solid #dfe1e6;
-    padding: 15px;
-    margin: 7em;
-  }
+    .headline i {
+      color: #505f79;
+      margin-bottom: 5%;
+    }
 
-  .work:nth-child(even) {
-    flex-direction: row-reverse;
-  }
+    .work {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      background-color: #fff;
+      border-radius: 16px;
+      border: 1px solid #dfe1e6;
+      padding: 15px;
+      margin: 7em;
+    }
 
-  .work img {
-    width: 100%;
-    height: auto;
-  }
+    .work:nth-child(even) {
+      flex-direction: row-reverse;
+    }
 
-  .img-card,
-  .card-contents,
-  .category,
-  .myself {
-    width: 50%;
-  }
+    .work img {
+      width: 100%;
+      height: auto;
+    }
 
-  .card-contents {
-    padding: 30px;
-  }
+    .img-card,
+    .card-contents,
+    .category,
+    .myself {
+      width: 50%;
+    }
 
-  .card-title,
-  .counter,
-  .card-desc,
-  .techs,
-  .work-btn {
-    margin: 35px 0;
-  }
+    .card-contents {
+      padding: 30px;
+    }
 
-  .btn-hover:hover {
-    background-color: #6070ff;
-    color: #fff;
-    border: 1px solid #fff;
-    font-weight: 500;
-  }
+    .card-title,
+    .counter,
+    .card-desc,
+    .techs,
+    .work-btn {
+      margin: 35px 0;
+    }
 
-  .about-myself {
-    margin-top: 7em;
-  }
+    .btn-hover:hover {
+      background-color: #6070ff;
+      color: #fff;
+      border: 1px solid #fff;
+      font-weight: 500;
+    }
 
-  .my-resume {
-    display: flex;
-    flex-direction: row;
-    padding: 90px;
-  }
+    .about-myself {
+      margin-top: 7em;
+    }
 
-  .myself-title {
-    margin: 10px;
-  }
+    .my-resume {
+      display: flex;
+      flex-direction: row;
+      padding: 90px;
+    }
 
-  .categories p {
-    padding: 10px 0;
-  }
+    .myself-title {
+      margin: 10px;
+    }
 
-  .stack ul li {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-    background-color: #f7f7f9;
-    border-radius: 10px;
-    width: 120px;
-    height: 120px;
-  }
+    .categories p {
+      padding: 10px 0;
+    }
 
-  .stack ul {
-    display: flex;
-    flex-direction: row;
-    gap: 15px;
-    list-style: none;
-    padding: 0;
-    margin: 15px 0;
-  }
+    .stack ul li {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: start;
+      background-color: #f7f7f9;
+      border-radius: 10px;
+      width: 120px;
+      height: 120px;
+    }
 
-  .stack ul li p {
-    font-size: 0.9em;
-    font-weight: 500;
-    color: #172b4d;
-    margin: 15px 0 0 0;
-  }
+    .stack ul {
+      display: flex;
+      flex-direction: row;
+      gap: 15px;
+      list-style: none;
+      padding: 0;
+      margin: 15px 0;
+    }
 
-  .contact-me-section {
-    margin: 0;
-  }
+    .stack ul li p {
+      font-size: 0.9em;
+      font-weight: 500;
+      color: #172b4d;
+      margin: 15px 0 0 0;
+    }
 
-  .contact {
-    background: #6070ff url(images/contact-form-desktop.png) no-repeat;
-    background-size: contain;
-    border-top-left-radius: 105px;
-    box-sizing: border-box;
-    padding: 9%;
-    margin-top: 7em;
-  }
+    .contact-me-section {
+      margin: 0;
+    }
 
-  .contact .contact-me {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 3.1em;
-    line-height: 52px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: #fff;
-    margin: 20px 0;
-  }
+    .contact {
+      background: #6070ff url(images/contact-form-desktop.png) no-repeat;
+      background-size: contain;
+      border-top-left-radius: 105px;
+      box-sizing: border-box;
+      padding: 9%;
+      margin-top: 7em;
+    }
 
-  .contact-info {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.2em;
-    line-height: 28px;
-    text-align: center;
-    color: #ebebff;
-    margin: 0 auto;
-    width: 70%;
-  }
+    .contact .contact-me {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 3.1em;
+      line-height: 52px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #fff;
+      margin: 20px 0;
+    }
 
-  form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 40px;
-  }
+    .contact-info {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1.2em;
+      line-height: 28px;
+      text-align: center;
+      color: #ebebff;
+      margin: 0 auto;
+      width: 70%;
+    }
 
-  input,
-  textarea {
-    width: 500px;
+    form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 40px;
+    }
+
+    input,
+    textarea {
+      width: 500px;
+    }
   }
 }
