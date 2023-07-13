@@ -664,7 +664,7 @@ textarea {
 
   @keyframes scaled {
     50% {
-      transform: scale(0.5);
+      transform: scale(0.4);
       transform-origin: left;
       box-shadow: 4px 3px 2px black;
     }
