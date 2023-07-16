@@ -127,7 +127,6 @@ You can deploy this project using
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- **[Add form.]**
 - **[Add Links and Buttons.]**
 - **Add pop-up page for each project with all information about the project**
 - **Add more personal project**
