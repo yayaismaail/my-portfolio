@@ -12,8 +12,8 @@ const popupArr = [
     stack: ['html', 'css', 'javaScript'],
     mobileImage: 'images/Snapshoot-Portfolio-1.png',
     desktopImage: 'images/Snapshoot-Portfolio-5.png',
-    seeliveLink: 'https://yayaismaail.github.io/my-portfolio/',
-    seeSourceLink: 'https://github.com/yayaismaail',
+    // seeliveLink: 'https://yayaismaail.github.io/my-portfolio/',
+    // seeSourceLink: 'https://github.com/yayaismaail',
   },
   {
     id: 1,
@@ -24,8 +24,8 @@ const popupArr = [
     stack: ['html', 'css', 'javaScript'],
     mobileImage: 'images/Snapshoot-Portfolio-2.png',
     desktopImage: 'images/Snapshoot-Portfolio-4.png',
-    seeliveLink: 'https://yayaismaail.github.io/my-portfolio/',
-    seeSourceLink: 'https://github.com/yayaismaail',
+    // seeliveLink: 'https://yayaismaail.github.io/my-portfolio/',
+    // seeSourceLink: 'https://github.com/yayaismaail',
   },
   {
     id: 2,
@@ -36,8 +36,8 @@ const popupArr = [
     stack: ['html', 'css', 'javaScript'],
     mobileImage: 'images/Snapshoot-Portfolio-3.png',
     desktopImage: 'images/Snapshoot-Portfolio-1.png',
-    seeliveLink: 'https://yayaismaail.github.io/my-portfolio/',
-    seeSourceLink: 'https://mobile.twitter.com/IsmailhalliruM1',
+    // seeliveLink: 'https://yayaismaail.github.io/my-portfolio/',
+    // seeSourceLink: 'https://mobile.twitter.com/IsmailhalliruM1',
   },
   {
     id: 3,
@@ -48,8 +48,8 @@ const popupArr = [
     stack: ['html', 'css', 'javaScript'],
     mobileImage: 'images/Snapshoot-Portfolio-4.png',
     desktopImage: 'images/Snapshoot-Portfolio-2.png',
-    seeliveLink: 'https://yayaismaail.github.io/my-portfolio/',
-    seeSourceLink: 'https://www.linkedin.com/mwlite/in/ismail-halliru-muhammad-2a8453127',
+    // seeliveLink: 'https://yayaismaail.github.io/my-portfolio/',
+    // seeSourceLink: 'https://www.linkedin.com/mwlite/in/ismail-halliru-muhammad-2a8453127',
   },
 ];
 
@@ -111,8 +111,8 @@ for (let index = 0; index < workBtn.length; index += 1) {
     const mobilepopupImg = popupContainer.querySelector('.mobile-popup-img');
     const desktoppopupImg = popupContainer.querySelector('.desktop-popup-img');
 
-    const seeliveLink = popupContainer.querySelector('.see-live-link');
-    const seeSourceLink = popupContainer.querySelector('.see-source-link');
+    // const seeliveLink = popupContainer.querySelector('.see-live-link');
+    // const seeSourceLink = popupContainer.querySelector('.see-source-link');
 
     mobileTitle.textContent = popupArr[index].mobileTitle;
     desktopPopupTitle.textContent = popupArr[index].desktopTitle;
@@ -137,8 +137,8 @@ for (let index = 0; index < workBtn.length; index += 1) {
     mobilepopupImg.setAttribute('src', popupArr[index].mobileImage);
     desktoppopupImg.setAttribute('src', popupArr[index].desktopImage);
 
-    seeliveLink.textContent = popupArr[index].seeliveLink;
-    seeSourceLink.textContent = popupArr[index].seeSourceLink;
+    // seeliveLink.textContent = popupArr[index].seeliveLink;
+    // seeSourceLink.textContent = popupArr[index].seeSourceLink;
 
     popupContainer.classList.remove('d-none');
   });
