@@ -536,8 +536,6 @@ textarea {
 
   .work {
     display: flex;
-
-    /* flex-direction: row; */
     justify-content: center;
     gap: 30px;
     background-color: #fff;
@@ -547,7 +545,7 @@ textarea {
     margin: 10em;
   }
 
-  .work-section:nth-child(even) {
+  .work:nth-child(even) {
     flex-direction: row-reverse;
   }
 
