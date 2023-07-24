@@ -10,6 +10,17 @@ body {
   background-color: #e5e5e5;
 }
 
+.d-none {
+  display: none;
+}
+
+.error-message {
+  color: #fff;
+  margin-top: 20px;
+  text-shadow: 2px 3px 1px #0d151e;
+  font-size: 20px;
+}
+
 .desktop-menu,
 .desktop {
   display: none;
@@ -655,5 +666,127 @@ textarea {
   input,
   textarea {
     width: 720px;
+  }
+}
+
+/* mobile popup section */
+.popup-container {
+  background-color: silver;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+}
+
+.popup-contents {
+  background-color: #fff;
+  width: 90%;
+  height: auto;
+  margin: 100px auto;
+  box-sizing: border-box;
+  border-radius: 16px;
+  padding: 20px;
+}
+
+.close-popup {
+  position: absolute;
+  top: 120px;
+  right: 35px;
+  font-size: 20px;
+  cursor: pointer;
+  font-weight: 500;
+  color: silver;
+}
+
+.popup-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.1em;
+  line-height: 44px;
+  width: 65%;
+  color: #172b4d;
+  margin: 3px 0;
+}
+
+.popup-img {
+  width: 100%;
+  height: auto;
+}
+
+.popup-desc {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 24px;
+  margin: 5px 0;
+  color: #344563;
+}
+
+.live-source {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 15px;
+}
+
+.see-live,
+.see-source {
+  border: 1px solid #396df2;
+  border-radius: 5px;
+  padding: 7px;
+  width: 130px;
+  background-color: #fff;
+}
+
+.see-live a,
+.see-source a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: #396df2;
+}
+
+/* Desktop popup section */
+@media (min-width: 768px) {
+  .mobile-popup-img,
+  .desktop-popup-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .close-popup {
+    position: absolute;
+    top: 120px;
+    right: 100px;
+    font-size: 30px;
+    cursor: pointer;
+    font-weight: 500;
+    color: silver;
+  }
+
+  .desktop-popup-contents {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .left-popup-contents {
+    width: 95%;
+  }
+
+  .right-popup-contents {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .live-source {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 15px;
   }
 }

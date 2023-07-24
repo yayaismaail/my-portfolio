@@ -8,6 +8,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css" />
     <script src="menu.js" defer></script>
+    <script src="popupwindow.js" defer></script>
+    <script src="form.js" defer></script>
 </head>
 <body>
     <header>
@@ -45,34 +47,37 @@
     </header>
 
     <main>
-
         <section class="work-section">
+            <div class="work"></div>
+        </section>
+        
+        <!-- <section class="work-section">
             <div class="work">
                 <div class="img-card">
                     <img src="images/Snapshoot-Portfolio-1.png" class="mobile" alt="">
                     <img src="images/Snapshoot-Portfolio-5.png" class="desktop" alt="">
                 </div>
                 <div class="card-contents">
-                    <h2 class="card-title">Tonic</h2>
-                    <div class="counter">
-                        <span>CANOPY</span>
-                        <span class="counters"></span>
-                        <span>Back End Dev</span>
-                        <span class="counters"></span>
-                        <span>2015</span>
-                    </div>
-                    <p class="card-desc">A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
-                    <ul class="techs">
-                        <li class="techs-item"><a href="#" class="techs-link">html</a></li>
-                        <li class="techs-item"><a href="#" class="techs-link">css</a></li>
-                        <li class="techs-item"><a href="#" class="techs-link">javaScript</a></li>
-                    </ul>
+                        <h2 class="card-title">Tonic</h2>
+                        <div class="counter">
+                            <span>CANOPY</span>
+                            <span class="counters"></span>
+                            <span>Back End Dev</span>
+                            <span class="counters"></span>
+                            <span>2015</span>
+                        </div>
+                        <p class="card-desc">A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
+                        <ul class="techs">
+                            <li class="techs-item"><a href="#" class="techs-link">html</a></li>
+                            <li class="techs-item"><a href="#" class="techs-link">css</a></li>
+                            <li class="techs-item"><a href="#" class="techs-link">javaScript</a></li>
+                        </ul>
                     <button type="button" class="work-btn">See Project</button>
                 </div>
             </div>
-        </section>
+        </section> -->
     
-        <section class="work-section">
+        <!-- <section class="work-section">
             <div class="work">
                 <div class="img-card">
                     <img src="images/Snapshoot-Portfolio-2.png" class="mobile"  alt="">
@@ -211,7 +216,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
     
         <section class="about-myself-section" id="about">
             <div class="about-myself">
@@ -285,12 +290,13 @@
                                 <input name="fullname" type="text" id="fullname" placeholder="Your Full Name" maxlength="30" required >
                             </label>
                             <label for="email">
-                                <input name="Email" id="email" type="email" placeholder="Your Email" required >
+                                <input name="email" id="email" type="email" placeholder="Your Email" required >
                             </label>
                             <label for="message">
                                 <textarea name="message" id="message" cols="30" rows="10" placeholder="Write your message here" maxlength="500" required></textarea>
                             </label>
                             <button type="submit" class="btn">Get in touch</button>
+                            <span class="error-message"></span>
                         </form>
                         <div class="shape"></div>
                     </div>
@@ -298,5 +304,71 @@
             </div>
         </section>
     </main>
+
+
+    <!-- Popup window section -->
+    <section class="popup-section">
+        <div class="popup-container d-none">
+            <div class="popup-contents">
+                    
+                <h2 class="mobile-popup-title mobile"></h2>
+                <h2 class="desktop-popup-title desktop"></h2>
+                <span class="close-popup"><i class="fa fa-times"></i></span>
+                    
+                <div class="counter">
+                    <span class="canopy"></span>
+                    <span class="counters"></span>
+                    <span class="back-end-dev"></span>
+                    <span class="counters"></span>
+                    <span class="date"></span>
+                </div>
+                    
+                <div class="popup-imgs">
+                    <img src="" class="mobile-popup-img mobile" alt="">
+                    <img src="" class="desktop-popup-img desktop" alt="">
+                </div>
+
+                <div class="desktop-popup-contents">
+                    <div class="left-popup-contents">
+                        <p class="mobile-popup-desc mobile"></p>
+                        <p class="desktop-popup-desc desktop"></p>
+                    </div>
+                    <div class="right-popup-contents">
+                        <ul class="techs">
+                            <li class="techs-item"><a href="#" class="techs-link popup-techs-link0"></a></li>
+                            <li class="techs-item"><a href="#" class="techs-link popup-techs-link1"></a></li>
+                            <li class="techs-item"><a href="#" class="techs-link popup-techs-link2"></a></li>
+                        </ul>
+                            
+                        <hr>
+                            
+                        <div class="live-source">
+                            <button class="see-live">
+                                <a href="#">
+                                    see live
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5 12C5 8.13401 8.13401 5 12 5C12.5523 5 13 4.55228 13 4C13 
+                                        3.44772 12.5523 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21C16.9706 21 21 16.9706 21 12C21 11.4477 
+                                        20.5523 11 20 11C19.4477 11 19 11.4477 19 12C19 15.866 15.866 19 12 19C8.13401 19 5 15.866 5 12ZM16 3C15.4477 3 
+                                        15 3.44772 15 4C15 4.55228 15.4477 5 16 5H17.5858L11.2929 11.2929C10.9024 11.6834 10.9024 12.3166 11.2929 
+                                        12.7071C11.6834 13.0976 12.3166 13.0976 12.7071 12.7071L19 6.41421V8C19 8.55228 19.4477 9 20 9C20.5523 9 21 
+                                        8.55228 21 8V4C21 3.44772 20.5523 3 20 3H16Z" fill="#6070FF"/>
+                                    </svg>
+                                </a>
+                            </button>
+                            <button class="see-source">
+                                <a href="#">
+                                    see source
+                                    <img src="images/github-icon.png" class="github-icon" alt="">
+                                </a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>      
+                
 </body>
 </html>
