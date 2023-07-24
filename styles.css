@@ -768,10 +768,16 @@ textarea {
 
 /* Desktop popup section */
 @media (min-width: 768px) {
-  .mobile-popup-img,
+  /* .mobile-popup-img, */
   .desktop-popup-img {
-    width: 100%;
+    width: 80%;
     height: auto;
+    margin: 0 auto;
+  }
+
+  .popup-contents {
+    width: 80%;
+    padding: 30px;
   }
 
   .close-popup {
