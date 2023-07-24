@@ -52,7 +52,6 @@ and using Layouts like Grid and Flexbox for position the elements and turning fi
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-<!-- - [Live Demo on Netlify](https://) -->
 - [Live Demo on Github pages](https://yayaismaail.github.io/my-portfolio/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -127,7 +126,6 @@ You can deploy this project using
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- **[Add form.]**
 - **[Add Links and Buttons.]**
 - **Add pop-up page for each project with all information about the project**
 - **Add more personal project**
