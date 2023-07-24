@@ -14,6 +14,13 @@ body {
   display: none;
 }
 
+button:hover {
+  background-color: #6070ff;
+  color: #fff;
+  border: 1px solid #fff;
+  font-weight: 500;
+}
+
 .desktop-menu,
 .desktop {
   display: none;
@@ -750,6 +757,11 @@ textarea {
   .desktop-popup-img {
     width: 100%;
     height: auto;
+  }
+
+  .popup-img {
+    width: 100%;
+    aspect-ratio: 2/1;
   }
 
   .close-popup {
