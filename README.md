@@ -27,7 +27,6 @@
 
 This repository is about learning how to build a portfolio project with HTML/CSS
 and using Layouts like Grid and Flexbox for position the elements and turning figma design to a webpage.
-<!-- >You can watch my outline video from [here]() -->
 
 ## 🛠 Built With <a name="built-with"></a>
 
