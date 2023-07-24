@@ -93,9 +93,9 @@ for (let index = 0; index < workBtn.length; index += 1) {
     const mobilePopupDescA = popupContainer.querySelector('.mobile-popup-desc');
     const desktopPopupDescA = popupContainer.querySelector('.desktop-popup-desc');
 
-    const popupTechsLink0 = popupContainer.querySelector('.popup-techs-linkA');
-    const popupTechsLink1 = popupContainer.querySelector('.popup-techs-linkB');
-    const popupTechsLink2 = popupContainer.querySelector('.popup-techs-linkC');
+    // const popupTechsLinkA = popupContainer.querySelector('.popup-techs-linkA');
+    // const popupTechsLinkB = popupContainer.querySelector('.popup-techs-linkB');
+    // const popupTechsLinkC = popupContainer.querySelector('.popup-techs-linkC');
 
     const mobilepopupImg = popupContainer.querySelector('.mobile-popup-img');
     const desktoppopupImg = popupContainer.querySelector('.desktop-popup-img');
@@ -106,7 +106,7 @@ for (let index = 0; index < workBtn.length; index += 1) {
     //= =============== Using Array Destructuring=================>
 
     const [canopyB, backEndDevB, dateB] = popupArr[index].detail;
-    const [popupTechsLinkA, popupTechsLinkB, popupTechsLinkC] = popupArr[index].stack;
+    // const [popupTechsLinkAA, popupTechsLinkBB, popupTechsLinkCC] = popupArr[index].stack;
 
     const [mobilePopupDescB, desktopPopupDescB] = popupArr[index].description;
 
@@ -117,9 +117,9 @@ for (let index = 0; index < workBtn.length; index += 1) {
     backEndDevA.textContent = backEndDevB;
     dateA.textContent = dateB;
 
-    popupTechsLink0.textContent = popupTechsLinkA;
-    popupTechsLink1.textContent = popupTechsLinkB;
-    popupTechsLink2.textContent = popupTechsLinkC;
+    // popupTechsLinkA.textContent = popupTechsLinkAA;
+    // popupTechsLinkB.textContent = popupTechsLinkBB;
+    // popupTechsLinkC.textContent = popupTechsLinkCC;
 
     mobilepopupImg.setAttribute('src', popupArr[index].mobileImage);
     desktoppopupImg.setAttribute('src', popupArr[index].desktopImage);
