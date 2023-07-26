@@ -12,7 +12,7 @@ function getFormData() {
   return formData;
 }
 
-formD.addEventListener('submit', () => {
+formD.addEventListener('change', () => {
   const formData = getFormData();
   localStorage.setItem('formData', JSON.stringify(formData));
 });
