@@ -664,7 +664,7 @@ textarea {
 
   @keyframes scaled {
     50% {
-      transform: scale(0.4);
+      transform: scale(1.1);
       transform-origin: left;
       box-shadow: 4px 3px 2px black;
     }
@@ -672,7 +672,7 @@ textarea {
 
   @keyframes scale {
     50% {
-      transform: scale(0.6);
+      transform: scale(1);
       transform-origin: left;
       box-shadow: 2px 3px 2px black;
     }
