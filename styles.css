@@ -547,10 +547,6 @@ textarea {
     width: 45%;
   }
 
-  .headline .content {
-    width: 90%;
-  }
-
   .headline i {
     color: #505f79;
     margin-bottom: 5%;
@@ -703,6 +699,7 @@ textarea {
   .headline .content {
     animation-duration: 3s;
     animation-name: slidein;
+    width: 90%;
   }
 
   @keyframes slidein {
