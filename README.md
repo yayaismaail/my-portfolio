@@ -27,7 +27,6 @@
 
 This repository is about learning how to build a portfolio project with HTML/CSS
 and using Layouts like Grid and Flexbox for position the elements and turning figma design to a webpage.
-<!-- >You can watch my outline video from [here]() -->
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -52,8 +51,7 @@ and using Layouts like Grid and Flexbox for position the elements and turning fi
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-<!-- - [Live Demo on Netlify](https://) -->
-- [Live Demo on Github pages](https://yayaismaail.github.io/portfolio/)
+- [Live Demo on Github pages](https://yayaismaail.github.io/my-portfolio/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
