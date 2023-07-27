@@ -8,8 +8,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css" />
     <script src="menu.js" defer></script>
-    <script src="popupwindow.js" defer></script>
     <script src="form.js" defer></script>
+    <script src="popupwindow.js" defer></script>
     <script src="storage.js" defer></script>
 </head>
 <body>
@@ -48,6 +48,9 @@
     </header>
 
     <main>
+
+        <section class="work-section"></section>
+    
         <section class="work-section">
             <div class="work"></div>
         </section>
@@ -124,13 +127,12 @@
                                 <input name="fullname" type="text" id="fullname" placeholder="Your Full Name" maxlength="30" required >
                             </label>
                             <label for="email">
-                                <input name="email" id="email" type="email" placeholder="Your Email" required >
+                                <input name="Email" id="email" type="email" placeholder="Your Email" required >
                             </label>
                             <label for="message">
                                 <textarea name="message" id="message" cols="30" rows="10" placeholder="Write your message here" maxlength="500" required></textarea>
                             </label>
                             <button type="submit" class="btn">Get in touch</button>
-                            <span class="error-message"></span>
                         </form>
                         <div class="shape"></div>
                     </div>
@@ -168,6 +170,9 @@
                     </div>
                     <div class="right-popup-contents">
                         <ul class="techs">
+                            <li class="techs-item"><a href="#" class="techs-link popup-techs-link0">html</a></li>
+                            <li class="techs-item"><a href="#" class="techs-link popup-techs-link1">css</a></li>
+                            <li class="techs-item"><a href="#" class="techs-link popup-techs-link2">javaScript</a></li>
                             <li class="techs-item"><a href="#" class="techs-link popup-techs-linkA"></a></li>
                             <li class="techs-item"><a href="#" class="techs-link popup-techs-linkB"></a></li>
                             <li class="techs-item"><a href="#" class="techs-link popup-techs-linkC"></a></li>
@@ -201,7 +206,7 @@
                 
             </div>
         </div>
-    </section>      
-                
+    </section>
+
 </body>
 </html>

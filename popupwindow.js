@@ -1,7 +1,6 @@
-// Popup Window, Dynamic Rendering
+//= ============= Popup Window, Dynamic Rendering==============>
 
 let html = '';
-
 const popupArr = [
   {
     id: 0,
@@ -12,8 +11,6 @@ const popupArr = [
     stack: ['html', 'css', 'javaScript'],
     mobileImage: 'images/Snapshoot-Portfolio-1.png',
     desktopImage: 'images/Snapshoot-Portfolio-5.png',
-    seeliveLink: 'https://yayaismaail.github.io/my-portfolio/',
-    seeSourceLink: 'https://github.com/yayaismaail',
   },
   {
     id: 1,
@@ -24,8 +21,6 @@ const popupArr = [
     stack: ['html', 'css', 'javaScript'],
     mobileImage: 'images/Snapshoot-Portfolio-2.png',
     desktopImage: 'images/Snapshoot-Portfolio-4.png',
-    seeliveLink: 'https://yayaismaail.github.io/my-portfolio/',
-    seeSourceLink: 'https://github.com/yayaismaail',
   },
   {
     id: 2,
@@ -36,8 +31,6 @@ const popupArr = [
     stack: ['html', 'css', 'javaScript'],
     mobileImage: 'images/Snapshoot-Portfolio-3.png',
     desktopImage: 'images/Snapshoot-Portfolio-1.png',
-    seeliveLink: 'https://yayaismaail.github.io/my-portfolio/',
-    seeSourceLink: 'https://mobile.twitter.com/IsmailhalliruM1',
   },
   {
     id: 3,
@@ -48,46 +41,42 @@ const popupArr = [
     stack: ['html', 'css', 'javaScript'],
     mobileImage: 'images/Snapshoot-Portfolio-4.png',
     desktopImage: 'images/Snapshoot-Portfolio-2.png',
-    seeliveLink: 'https://yayaismaail.github.io/my-portfolio/',
-    seeSourceLink: 'https://www.linkedin.com/mwlite/in/ismail-halliru-muhammad-2a8453127',
   },
 ];
 
 popupArr.forEach((card) => {
   html += `
-    <section class="work-section">
-            <div class="work">
-                <div class="img-card">
-                    <img src="${card.mobileImage}" class="mobile" alt="">
-                    <img src="${card.desktopImage}" class="desktop" alt="">
-                </div>
-                <div class="card-contents">
-                        <h2 class="card-title mobile">${card.mobileTitle}</h2>
-                        <h2 class="card-title desktop">${card.desktopTitle}</h2>
-                        <div class="counter">
-                            <span>${card.detail[0]}</span>
-                            <span class="counters"></span>
-                            <span>${card.detail[1]}</span>
-                            <span class="counters"></span>
-                            <span>${card.detail[2]}</span>
-                        </div>
-                        <p class="card-desc mobile">${card.description[0]}</p>
-                        <p class="card-desc desktop">${card.description[1]}</p>
-                        <ul class="techs">
-                            <li class="techs-item"><a href="#" class="techs-link">${card.stack[0]}</a></li>
-                            <li class="techs-item"><a href="#" class="techs-link">${card.stack[1]}</a></li>
-                            <li class="techs-item"><a href="#" class="techs-link">${card.stack[2]}</a></li>
-                        </ul>
-                    <button type="button" class="work-btn">See Project</button>
-                </div>
-            </div>
-        </section>`;
+  <div class="work">
+  <div class="img-card">
+      <img src="${card.mobileImage}" alt="" class="mobile">
+      <img src="${card.desktopImage}" alt="" class="desktop">
+  </div>
+  <div class="card-contents">
+      <h2 class="card-title mobile">${card.mobileTitle}</h2>
+      <h2 class="card-title desktop">${card.desktopTitle}</h2>
+      <div class="counter">
+        <span>${card.detail[0]}</span>
+        <span class="counters"></span>
+        <span>${card.detail[1]}</span>
+        <span class="counters"></span>
+        <span>${card.detail[2]}</span>
+      </div>
+      <p class="card-desc mobile">${card.description[0]}</p>
+      <p class="card-desc desktop">${card.description[1]}</p>
+      <ul class="techs">
+          <li class="techs-item"><a href="" class="techs-link">${card.stack[0]}</a></li>
+          <li class="techs-item"><a href="" class="techs-link">${card.stack[1]}</a></li>
+          <li class="techs-item"><a href="" class="techs-link">${card.stack[2]}</a></li>
+      </ul>
+      <button type="button" class="work-btn">see project</button>
+  </div>
+</div>`;
 });
 
 const workSection = document.querySelector('.work-section');
 workSection.innerHTML = html;
 
-// Popup window section
+//= ========== Popup Window Section =================>
 
 const workBtn = document.querySelectorAll('.work-btn');
 const popupContainer = document.querySelector('.popup-container');
@@ -104,22 +93,20 @@ for (let index = 0; index < workBtn.length; index += 1) {
     const mobilePopupDescA = popupContainer.querySelector('.mobile-popup-desc');
     const desktopPopupDescA = popupContainer.querySelector('.desktop-popup-desc');
 
-    const popupTechsLink0 = popupContainer.querySelector('.popup-techs-linkA');
-    const popupTechsLink1 = popupContainer.querySelector('.popup-techs-linkB');
-    const popupTechsLink2 = popupContainer.querySelector('.popup-techs-linkC');
+    // const popupTechsLinkA = popupContainer.querySelector('.popup-techs-linkA');
+    // const popupTechsLinkB = popupContainer.querySelector('.popup-techs-linkB');
+    // const popupTechsLinkC = popupContainer.querySelector('.popup-techs-linkC');
 
     const mobilepopupImg = popupContainer.querySelector('.mobile-popup-img');
     const desktoppopupImg = popupContainer.querySelector('.desktop-popup-img');
 
-    const seeliveLink = popupContainer.querySelector('.see-live-link');
-    const seeSourceLink = popupContainer.querySelector('.see-source-link');
-
     mobileTitle.textContent = popupArr[index].mobileTitle;
     desktopPopupTitle.textContent = popupArr[index].desktopTitle;
 
-    // using array destructuring
+    //= =============== Using Array Destructuring=================>
+
     const [canopyB, backEndDevB, dateB] = popupArr[index].detail;
-    const [popupTechsLinkA, popupTechsLinkB, popupTechsLinkC] = popupArr[index].stack;
+    // const [popupTechsLinkAA, popupTechsLinkBB, popupTechsLinkCC] = popupArr[index].stack;
 
     const [mobilePopupDescB, desktopPopupDescB] = popupArr[index].description;
 
@@ -130,21 +117,18 @@ for (let index = 0; index < workBtn.length; index += 1) {
     backEndDevA.textContent = backEndDevB;
     dateA.textContent = dateB;
 
-    popupTechsLink0.textContent = popupTechsLinkA;
-    popupTechsLink1.textContent = popupTechsLinkB;
-    popupTechsLink2.textContent = popupTechsLinkC;
+    // popupTechsLinkA.textContent = popupTechsLinkAA;
+    // popupTechsLinkB.textContent = popupTechsLinkBB;
+    // popupTechsLinkC.textContent = popupTechsLinkCC;
 
     mobilepopupImg.setAttribute('src', popupArr[index].mobileImage);
     desktoppopupImg.setAttribute('src', popupArr[index].desktopImage);
-
-    seeliveLink.textContent = popupArr[index].seeliveLink;
-    seeSourceLink.textContent = popupArr[index].seeSourceLink;
 
     popupContainer.classList.remove('d-none');
   });
 }
 
-// popup close btn
+//= ============== Popup Close Button ==============>
 
 const closeBtn = document.querySelector('.close-popup');
 closeBtn.addEventListener('click', () => {
