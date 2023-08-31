@@ -7,10 +7,10 @@ const popupArr = [
     mobileTitle: 'Tonic',
     desktopTitle: 'Tonic',
     detail: ['CANOPY', 'Back End Dev', 2015],
-    description: ['A daily  selection of privately personalized reads; no accounts or sign-ups required.', 'A daily  selection of privately personalized reads; no accounts or sign-ups required.'],
+    description: ['This is a Tailor website that Produce Custom-made (bespoke) Suits, Jackets And Coats For Men And Women and other sewing tools.', 'This is a Tailor website that Produce Custom-made (bespoke) Suits, Jackets And Coats For Men And Women and other sewing tools.'],
     stack: ['html', 'css', 'javaScript'],
-    mobileImage: 'images/Snapshoot-Portfolio-1.png',
-    desktopImage: 'images/Snapshoot-Portfolio-5.png',
+    mobileImage: 'images/snipp-mob.PNG',
+    desktopImage: 'images/snipp2.PNG',
   },
   {
     id: 1,
