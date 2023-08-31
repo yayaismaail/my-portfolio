@@ -27,12 +27,15 @@ body {
 }
 
 .navbar {
-  min-height: 70px;
+  min-height: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 24px;
   background-color: #fff;
+  position: fixed;
+  width: 100vw;
+  top: 0;
 }
 
 .my-logo {
@@ -60,13 +63,12 @@ body {
 
 .headline {
   background: #fff url("images/header-shapes-mobile.png") no-repeat;
-
-  /* background-size: contain; */
   background-size: 100%;
   display: flex;
   flex-direction: column;
   border-bottom-left-radius: 75px;
   padding: 55px 20px 0;
+  margin-top: 50px;
 }
 
 .headline h1 {
@@ -250,6 +252,9 @@ body {
   background-color: #6070ff;
   border: 1px solid #6070ff;
   font-weight: 100;
+  width: 175px;
+  transition: all 0.5s ease-in-out;
+  box-shadow: 2px 4px 3px #0d151e;
 }
 
 .about-myself {
@@ -495,7 +500,10 @@ textarea {
 /* Desktop */
 @media only screen and (min-width: 768px) {
   .navbar {
-    padding: 25px 110px;
+    padding: 5px 110px;
+    position: fixed;
+    width: 100vw;
+    top: 0;
   }
 
   .mobile-menu,
@@ -515,11 +523,11 @@ textarea {
     margin: 0;
   }
 
-  .desktop-menu li {
+  .desktop-menu .nav-item {
     display: inline-block;
   }
 
-  .desktop-menu li a {
+  .desktop-menu .nav-item .nav-link {
     display: block;
     color: #344563;
     padding: 8px 16px;
@@ -533,17 +541,15 @@ textarea {
 
   .headline {
     background: #fff url("images/Header-desktop.png") no-repeat;
-
-    /* background-size: contain; */
     background-size: cover;
     display: flex;
     flex-direction: column;
     border-bottom-left-radius: 75px;
     padding: 10% 18%;
-    margin-bottom: 50px;
+    margin: 50px 0 50px 0;
   }
 
-  .headline h1 {
+  .headline .greeting {
     width: 45%;
   }
 
@@ -560,7 +566,7 @@ textarea {
     border-radius: 16px;
     border: 1px solid #dfe1e6;
     padding: 15px;
-    margin: 10em;
+    margin: 5em;
   }
 
   .work:nth-child(even) {
@@ -569,7 +575,7 @@ textarea {
 
   .work img {
     width: 100%;
-    height: auto;
+    height: 100%;
   }
 
   .img-card,
@@ -589,6 +595,10 @@ textarea {
   .techs,
   .work-btn {
     margin: 35px 0;
+  }
+
+  .about-myself {
+    margin-top: 5em;
   }
 
   .my-resume {
@@ -630,17 +640,12 @@ textarea {
     font-size: 0.8em;
   }
 
-  .contact-me-section {
-    margin: 0;
-  }
-
   .contact {
     background: #6070ff url(images/contact-form-desktop.png) no-repeat;
     background-size: contain;
     border-top-left-radius: 105px;
-    box-sizing: border-box;
-    padding: 10%;
-    margin-top: 18%;
+    padding: 8%;
+    margin-top: 3em;
   }
 
   .contact .contact-me {
@@ -653,7 +658,7 @@ textarea {
     align-items: center;
     text-align: center;
     color: #fff;
-    margin: 20px 0;
+    margin: 18px 0;
   }
 
   .contact-info {
@@ -680,26 +685,10 @@ textarea {
     width: 500px;
   }
 
-  @keyframes scaled {
-    50% {
-      transform: scale(1.1);
-      transform-origin: left;
-      box-shadow: 4px 3px 2px black;
-    }
-  }
-
-  @keyframes scale {
-    50% {
-      transform: scale(1);
-      transform-origin: left;
-      box-shadow: 2px 3px 2px black;
-    }
-  }
-
   .headline .content {
     animation-duration: 3s;
     animation-name: slidein;
-    width: 90%;
+    width: 80%;
   }
 
   @keyframes slidein {
@@ -719,11 +708,6 @@ textarea {
       margin-left: 0%;
       width: 100%;
     }
-  }
-
-  .greeting:hover {
-    -webkit-animation: rubberband 2s;
-    animation: rubberBand 2s;
   }
 
   @keyframes rubberBand {
@@ -763,11 +747,6 @@ textarea {
     }
   }
 
-  .social-media i:hover {
-    -webkit-animation: bounce 2s;
-    animation: bounce 2s;
-  }
-
   @keyframes bounce {
     0%,
     20%,
@@ -804,15 +783,36 @@ textarea {
     }
   }
 
-  .myself-title:hover {
-    -webkit-animation: rubberband 2s;
-    animation: rubberBand 2s;
+  .my-logo:hover {
+    font-size: 2em;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    text-shadow: 2px 3px 3px #172b4d;
   }
 
-  .contents:hover {
+  .desktop-menu .nav-item .nav-link:hover {
+    font-size: 1.4em;
+    transition: all 0.5s ease-in-out;
+    text-decoration: underline #396df2;
+  }
+
+  .social-media i:hover {
+    -webkit-animation: bounce 2s;
+    animation: bounce 2s;
+  }
+
+  .myself-title:hover,
+  .contents:hover,
+  .greeting:hover {
     -webkit-animation: rubberband 2s;
     animation: rubberBand 2s;
-    width: 720px;
+    width: 520px;
+  }
+
+  .connect:hover {
+    font-size: 1.3em;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
   }
 }
 
@@ -907,15 +907,15 @@ textarea {
   }
 
   .popup-contents {
-    width: 80%;
+    width: 70%;
     padding: 30px;
   }
 
   .close-popup {
     position: absolute;
-    top: 120px;
-    right: 100px;
-    font-size: 30px;
+    top: 150px;
+    right: 280px;
+    font-size: 40px;
     cursor: pointer;
     font-weight: 500;
     color: silver;
