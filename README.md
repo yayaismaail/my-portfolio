@@ -25,7 +25,7 @@
 
 # 📖 portfolio<a name="about-project"></a>
 
-This repository is about learning how to build a portfolio project with HTML/CSS
+This repository is about learning how to build a portfolio project with HTML/CSS-JS
 and using Layouts like Grid and Flexbox for position the elements and turning figma design to a webpage.
 
 ## 🛠 Built With <a name="built-with"></a>
@@ -34,13 +34,14 @@ and using Layouts like Grid and Flexbox for position the elements and turning fi
 
 - HTML
 - CSS
+- JS
 
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
 
-- **Using linters**
-- **Mobile First and Responsive**
+- **[Set up Using linters]**
+- **[Mobile First and Responsive]**
 - **Layout with Flexbox & Grid**
 - **[Able to fit to different devices screen]**
 - **[Use images and backgrounds to enhance the look of the  website.]**
@@ -51,7 +52,7 @@ and using Layouts like Grid and Flexbox for position the elements and turning fi
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo on Github pages](https://yayaismaail.github.io/my-portfolio/)
+- [Live Demo on Github pages]()
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -126,9 +127,9 @@ You can deploy this project using
 ## 🔭 Future Features <a name="future-features"></a>
 
 - **[Add Links and Buttons.]**
-- **Add pop-up page for each project with all information about the project**
-- **Add more personal project**
-- **Add Backend and Database**
+- **[Add pop-up page for each project with all information about the project]**
+- **[Add more personal project]**
+- **[Add Backend and Database]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -154,7 +155,7 @@ If you like this project don't forget to leave a `start`.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thanks Microverse
+Above all, to Almighty Allah be the Glory.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
