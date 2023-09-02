@@ -4,13 +4,15 @@ let html = '';
 const popupArr = [
   {
     id: 0,
-    mobileTitle: 'Tonic',
-    desktopTitle: 'Tonic',
+    mobileTitle: 'Tailoring',
+    desktopTitle: 'Tailoring',
     detail: ['CANOPY', 'Back End Dev', 2015],
     description: ['This is a Tailor website that Produce Custom-made (bespoke) Suits, Jackets And Coats For Men And Women and other sewing tools.', 'This is a Tailor website that Produce Custom-made (bespoke) Suits, Jackets And Coats For Men And Women and other sewing tools.'],
     stack: ['html', 'css', 'javaScript'],
     mobileImage: 'images/snipp-mob.PNG',
     desktopImage: 'images/snipp2.PNG',
+    live: 'https://yayaismaail.github.io/capstone1/',
+    source: 'https://github.com/yayaismaail/capstone1',
   },
   {
     id: 1,
@@ -21,6 +23,8 @@ const popupArr = [
     stack: ['html', 'css', 'javaScript'],
     mobileImage: 'images/Snapshoot-Portfolio-2.png',
     desktopImage: 'images/Snapshoot-Portfolio-4.png',
+    live: 'https://yayaismaail.github.io/capstone1/',
+    source: 'https://github.com/yayaismaail/capstone1',
   },
   {
     id: 2,
@@ -31,6 +35,8 @@ const popupArr = [
     stack: ['html', 'css', 'javaScript'],
     mobileImage: 'images/Snapshoot-Portfolio-3.png',
     desktopImage: 'images/Snapshoot-Portfolio-1.png',
+    live: 'https://yayaismaail.github.io/capstone1/',
+    source: 'https://github.com/yayaismaail/capstone1',
   },
   {
     id: 3,
@@ -41,6 +47,8 @@ const popupArr = [
     stack: ['html', 'css', 'javaScript'],
     mobileImage: 'images/Snapshoot-Portfolio-4.png',
     desktopImage: 'images/Snapshoot-Portfolio-2.png',
+    live: 'https://yayaismaail.github.io/capstone1/',
+    source: 'https://github.com/yayaismaail/capstone1',
   },
 ];
 
@@ -93,12 +101,11 @@ for (let index = 0; index < workBtn.length; index += 1) {
     const mobilePopupDescA = popupContainer.querySelector('.mobile-popup-desc');
     const desktopPopupDescA = popupContainer.querySelector('.desktop-popup-desc');
 
-    // const popupTechsLinkA = popupContainer.querySelector('.popup-techs-linkA');
-    // const popupTechsLinkB = popupContainer.querySelector('.popup-techs-linkB');
-    // const popupTechsLinkC = popupContainer.querySelector('.popup-techs-linkC');
-
     const mobilepopupImg = popupContainer.querySelector('.mobile-popup-img');
     const desktoppopupImg = popupContainer.querySelector('.desktop-popup-img');
+
+    const liveButton = popupContainer.querySelector('.see-live');
+    const sourceButton = popupContainer.querySelector('.see-source');
 
     mobileTitle.textContent = popupArr[index].mobileTitle;
     desktopPopupTitle.textContent = popupArr[index].desktopTitle;
@@ -106,7 +113,6 @@ for (let index = 0; index < workBtn.length; index += 1) {
     //= =============== Using Array Destructuring=================>
 
     const [canopyB, backEndDevB, dateB] = popupArr[index].detail;
-    // const [popupTechsLinkAA, popupTechsLinkBB, popupTechsLinkCC] = popupArr[index].stack;
 
     const [mobilePopupDescB, desktopPopupDescB] = popupArr[index].description;
 
@@ -117,12 +123,11 @@ for (let index = 0; index < workBtn.length; index += 1) {
     backEndDevA.textContent = backEndDevB;
     dateA.textContent = dateB;
 
-    // popupTechsLinkA.textContent = popupTechsLinkAA;
-    // popupTechsLinkB.textContent = popupTechsLinkBB;
-    // popupTechsLinkC.textContent = popupTechsLinkCC;
-
     mobilepopupImg.setAttribute('src', popupArr[index].mobileImage);
     desktoppopupImg.setAttribute('src', popupArr[index].desktopImage);
+
+    liveButton.setAttribute('href', popupArr[index].live);
+    sourceButton.setAttribute('href', popupArr[index].source);
 
     popupContainer.classList.remove('d-none');
   });

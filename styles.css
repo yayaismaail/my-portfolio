@@ -878,8 +878,8 @@ textarea {
   gap: 15px;
 }
 
-.see-live,
-.see-source {
+.see-live-btn,
+.see-source-btn {
   border: 1px solid #396df2;
   border-radius: 5px;
   padding: 7px;
@@ -887,8 +887,8 @@ textarea {
   background-color: #fff;
 }
 
-.see-live a,
-.see-source a {
+.see-live-btn a,
+.see-source-btn a {
   display: flex;
   justify-content: center;
   align-items: center;
